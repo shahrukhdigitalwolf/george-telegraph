@@ -473,7 +473,11 @@ a{
     transform: scale(0.5); 
     z-index: 9999;
 }
-
+@media (min-width:1200px) {
+    #course{
+        width: 500px;
+    }
+}
 @media only screen and (min-width: 576px) and (max-width: 767px) {
     .header__search-3 {
         min-height: 300px;
@@ -760,7 +764,7 @@ a{
 }
 
 .main-menu ul li .submenu li a {
-    padding: 10px 25px;
+    padding: 10px 12px;
     font-size: 13px;
     position: relative;
     z-index: 1;
@@ -893,7 +897,7 @@ a{
 .sidebar-toggle-btn .line {
     width: 30px;
     height: 3px;
-    background-color: #2b4eff;
+    background-color: #ffffff;
     display: block;
     margin: 6px auto;
     -webkit-transition: all 0.3s ease-in-out;
@@ -1216,9 +1220,13 @@ a{
     .slider-div img{
      width: auto !important;
     }
+    .slider1 img{
+        position: relative;
+        left: -50vh;
+    }
     .slider2 img{
         position: relative;
-        left: -120vh;
+        left: -50vh;
     }
 }
 .icon-mini-info{
@@ -1475,7 +1483,7 @@ a{
 .video-title{
     color: #0045aa;
     text-align: center;
-    font-size: 3.45vh;
+    font-size: 2.45vh;
     font-weight: 700;
     font-family: 'Tinos' sans-serif;
 }
@@ -1579,7 +1587,7 @@ a{
     font-weight: 600;
 }
 .stories-description{
-    font-size: 1.65vh;
+    font-size: 1.89vh;
     font-weight: 500;
     height: 30vh;
     overflow-y: scroll;
@@ -1622,7 +1630,7 @@ footer{
     border-right: 2px solid rgb(234, 234, 234);
 }
 .pills .nav-link{
-    opacity: .5;
+    opacity: .7;
     outline: none;
     padding: 0.5rem 3rem .5rem 0.5rem;
     margin: 8px -2px 8px 0;
@@ -1635,7 +1643,8 @@ footer{
 }
 .pills-button-img{
     max-width: 100%;
-    width: 70px ;
+    width: 65px;
+    height: 65px;
 }
 @media (max-width:991px){
     .pills{
@@ -1643,6 +1652,7 @@ footer{
     }
     .pills-button-img{
         width: 40px ;
+        height: 40px;
     }  
     .pills .nav-link{
         padding: 0.5rem 1rem .5rem 0.5rem; 
@@ -1651,6 +1661,11 @@ footer{
         border-bottom: 2px solid #2cdd9b;
         border-right: none;
     }
+}
+
+.partner-img{
+    aspect-ratio: 3/2;
+    object-fit: contain;
 }
 
 .testimonials-home{
@@ -1684,7 +1699,7 @@ footer{
     font-weight: 600;
 }
 .text1-testi{
-    width: 80.722vh;
+    width: 60.722vh;
     font-size: 0.95pc;
     font-weight: 600;
     letter-spacing: .15px;
@@ -1711,6 +1726,11 @@ footer{
         font-weight: 400;
     }
 }
+@media (max-width:767px) {
+    .double{
+        display: none;
+    }
+}
 .mini-line{
     background-color: aliceblue;
     width: 200px;
@@ -1722,7 +1742,14 @@ footer{
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
     background-color: #7b7b7b;
 }
-
+.since1920{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: .4;
+    z-index: -1;
+}
 /* ---------------
 ##About page
 -----------------*/
