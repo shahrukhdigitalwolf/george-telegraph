@@ -1602,7 +1602,21 @@ a{
 
 footer{
     padding: 5vh 2vh 3vh;
-    background-color: #2a3a57;
+    background-color: #003962;
+    position: relative;
+    z-index: 20;
+}
+footer::before{
+    content: '';
+    background: url(../img/other/footerbg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 .vulte-footer-desc{
     color: #ffc107;
