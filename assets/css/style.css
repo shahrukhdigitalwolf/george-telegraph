@@ -2047,8 +2047,10 @@ footer::before{
 .job_opp-item{
     text-align: center;
     color: #ffffff;
-    background-color: #192655;
-    border-radius: 86% 14% 87% 13% / 14% 84% 16% 86%;
+    background: url(../img/other/1385507.webp);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 8px;
     height: 270px;
     width: 100%;
     display: flex;
@@ -2056,16 +2058,7 @@ footer::before{
     flex-direction: column;
     transition: transform .5s ease;
 }
-.inner_job-item{
-    transform: rotate(0deg);
-    transition: transform .5s ease;
-}
-.job_opp-item:hover{
-    transform: rotate(5deg);
-}
-.job_opp-item:hover .inner_job-item{
-    transform: rotate(-5deg);
-}
+
 .career-form_left{
     background-color: #0D97FA;
     height: 100%;
@@ -2096,8 +2089,38 @@ footer::before{
         margin-bottom: 10px;
     }
 }
-
-
+.centres-card.card1{
+    background-color: #003962;
+    color: #ffffff;
+}
+.centres-card{
+    padding: 20px 17px 20px;
+}
+.centres-first-info{
+    display: flex;
+    justify-content: end;
+    line-height: 1.8;
+}
+.centres-title{
+    font-size: 3.45vh;
+    font-weight: 700;
+    padding: 1vh 0;
+}
+.centres-card-bottom{
+    padding: 30px 15px;
+    border: 1px solid rgb(223, 223, 223);
+}
+.centres-btn{
+    color: #000000;
+    font-weight: 700;
+    border: 2px solid #0c63e4;
+    padding: 10px 30px;
+    transition: all .5s ease;
+}
+.centres-btn:hover{
+    background-color: #0c63e4;
+    color: #fff;
+}
 .cnt-bgs3{
     background-color: #fafafa;
     position: relative;
