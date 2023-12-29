@@ -3,300 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;900&display=swap" rel="stylesheet">
   <title>Document</title>
-  <style>
-    
-    *{
-      margin: 0;
-      padding: 0;
-    }
-    body{
-      box-sizing: border-box;
-      background-image: linear-gradient( 99.6deg,  rgba(112,128,152,1) 10.6%, rgba(242,227,234,1) 32.9%, rgba(234,202,213,1) 52.7%, rgba(220,227,239,1) 72.8%, rgba(185,205,227,1) 81.1%, rgba(154,180,212,1) 102.4% );
-      font-family: 'Rubik', sans-serif;
-    }
-    .bill-sect{
-      padding: 10px;
-    }
-    .bill-inner{
-      max-width: 95%;
-      width: 768px;
-      display: block;
-      margin: auto;
-      background-color: rgb(255, 255, 255);
-      border: 1px solid #9e9e9e;
-      
-    }
-    .heading-text{
-      background-color:#618264 ;
-      padding: 40px 30px 40px;
-    }
-    .heading-text h1{
-      color: #ffffff;
-    }
-    .description-box{
-      padding: 30px 20px 30px;
-    }
-    .para-text{
-      margin-bottom: 0;
-    }
-    .description.text1{
-      color: rgb(49, 49, 49);
-    }
-    .description.text2{
-      font-size: 2.45vh;
-      color: #618264;
-      margin-top: 10px;
-    }
-    .table-info{
-      margin-top: 20px;
-      margin-bottom: 20px;
-      max-width: 100%;
-      overflow: overlay;
-    }
-    table{
-      border-collapse:collapse;
-      width: 100%;
-    }
-    table thead{
-      text-align: left; 
-      height:40px;
-      background-color: #618264;
-      color: #ffffff;
-    }
-    table thead tr th{
-      padding: 10px;
-      border: 1px solid #9e9e9e;
-    }
-    table thead tr th:nth-child(1){
-      width: 450px;
-    }
-    table thead tr th:nth-child(2){
-      width: 50px;
-    }
-    table tbody tr td{
-      padding: 10px;
-      border: 1px solid #9e9e9e;
-    }
-    .qty{
-      text-align: center;
-    }
-    .billing-info{
-      display: flex;
-      max-width: 100%;
-      margin-bottom: 20px;
-    }
-    .billing-info_inner{
-      padding: 10px;
-      border: 1px solid #9e9e9e;
-    }
-    @media (max-width:767px) {
-      .billing-info{
-        display: block;
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/owl.carousel.css">
+    <link rel="stylesheet" href="./assets/css/owl.theme.green.css">
+    <style>
+      .owl-carousel .owl-item {
+        transform: scale(1);
+        transition: transform .5s ease;
+        
       }
-    }
-    .bill-info-h{
-      font-size: 20px;
-      font-weight: 700;
-      color: #618264;
-      margin-bottom: 10px;
-    }
-    .bill-info-n{
-      font-weight: 500;
-    }
-    .bottom-info p{
-      margin-bottom: 15px;
-    }
-    @media print {
-      .noPrint{
-        display:none;
+      .owl-item.active.center {
+        transform: scale(1.3);
+        transition: transform .5s ease;
+        z-index: 20;
       }
-    }
-    .printbtn{
-      background-color: #618264;
-      color: #ffffff;
-      padding: 10px 20px;
-    }
-  </style>
+      .owl-carousel .owl-stage-outer{
+        height: 600px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+      }
+
+
+    </style>
 </head>
 <body>
-  <section class="bill-sect">
-    <div class="bill-inner">
-        <div>
-          <div class="heading-text">
-            <h1>New Order : #5626</h1>
-          </div>
-          <div class="description-box">
-            <div class="description text1">
-              <p class="para-text">You’ve received the following order from Sapan Debnath:</p>
-            </div>
-            <div class="description text2">
-              <p class="para-text">
-               <a href="#">[Order #5626]</a> (November 20, 2023)
-              </p>
-            </div>
-            <div class="table-info">
-              <table>
-                <thead>
-                  <tr>
-                    <th>Product</th>
-                    <th>Quantity</th>
-                    <th>Price</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>
-                      <p>Liebigs_Thunders - 25 Gm (#THUDER_25_60)</p>
-                      <p><strong>Presentation :</strong> 25 Gm</p>
-                    </td>
-                    <td class="qty">01</td>
-                    <td>5000</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>Liebigs_Thunders - 25 Gm (#THUDER_25_60)</p>
-                      <p><strong>Presentation :</strong> 25 Gm</p>
-                    </td>
-                    <td class="qty">01</td>
-                    <td>5000</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>Liebigs_Thunders - 25 Gm (#THUDER_25_60)</p>
-                      <p><strong>Presentation :</strong> 25 Gm</p>
-                    </td>
-                    <td class="qty">01</td>
-                    <td>5000</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>Liebigs_Thunders - 25 Gm (#THUDER_25_60)</p>
-                      <p><strong>Presentation :</strong> 25 Gm</p>
-                    </td>
-                    <td class="qty">01</td>
-                    <td>5000</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>Liebigs_Thunders - 25 Gm (#THUDER_25_60)</p>
-                      <p><strong>Presentation :</strong> 25 Gm</p>
-                    </td>
-                    <td class="qty">01</td>
-                    <td>5000</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>Liebigs_Thunders - 25 Gm (#THUDER_25_60)</p>
-                      <p><strong>Presentation :</strong> 25 Gm</p>
-                    </td>
-                    <td class="qty">01</td>
-                    <td>5000</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>Liebigs_Thunders - 25 Gm (#THUDER_25_60)</p>
-                      <p><strong>Presentation :</strong> 25 Gm</p>
-                    </td>
-                    <td class="qty">01</td>
-                    <td>5000</td>
-                  </tr>
-                  <tr>
-                    <td>
-                      <p>Liebigs_Thunders - 25 Gm (#THUDER_25_60)</p>
-                      <p><strong>Presentation :</strong> 25 Gm</p>
-                    </td>
-                    <td class="qty">01</td>
-                    <td>5000</td>
-                  </tr>
-                  <tr style="border-top: 2px solid #9e9e9e;">
-                    <td colspan="2">
-                      <strong>Subtotal :</strong>
-                    </td>
-                    <td>5000</td>
-                  </tr>
-                  <tr>
-                    <td colspan="2">
-                      <strong>Shipping :</strong>
-                    </td>
-                    <td>Free Shipping</td>
-                  </tr>
-                  <tr>
-                    <td colspan="2">
-                      <strong>Payment method :</strong>
-                    </td>
-                    <td>Insta mojo</td>
-                  </tr>
-                  <tr>
-                    <td colspan="2">
-                      <strong>Grand Total :</strong>
-                    </td>
-                    <td>5000</td>
-                  </tr>
-                  
-                </tbody>
-              </table>
-            </div>
-            <div class="billing-info">
-              <div class="billing-info_inner">
-                <div class="bill-info-h">
-                  <p>Billing address</p>
-                </div>
-                <div class="bill-info-n">
-                  <p>Sapan Debnath</p>
-                </div>
-                <div>
-                  <p>malkangiri,main road malkangiri malkangiri 764045 Odisha</p>
-                </div>
-                <div>
-                  <a href="#">9938882325</a>
-                </div>
-                <div>
-                  <a href="#">abhijit.sarkarr@gmail.com</a>
-                </div>
-              </div>
-              <div class="billing-info_inner">
-                <div class="bill-info-h">
-                  <p>Shipping address</p>
-                </div>
-                <div class="bill-info-n">
-                  <p>Sapan Debnath</p>
-                </div>
-                <div>
-                  <p>malkangiri,main road malkangiri malkangiri 764045 Odisha</p>
-                </div>
-                <div>
-                  <a href="#">9938882325</a>
-                </div>
-                <div>
-                  <a href="#">abhijit.sarkarr@gmail.com</a>
-                </div>
-              </div>
-            </div>
-            <div class="bottom-info">
-              <div>
-                <p>Thank you for your order. We shall dispatch your consignment as soon as possible.</p>
-              </div>
-              <div>
-                <p>
-                  For any query please call : (+91) 8240375229
-                </p>
-              </div>
-              <div>
-                <p>
-                  Process your orders on the go. <a href="#">Get the app.</a>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+<div class="container pt-5">
+  <div class="owl-carousel owl-theme" data-owl-carousel='{
+    "margin": 10, 
+    "dots":false, 
+    "loop":true,
+    "nav" : false,
+    "center" : true,
+    "responsive":{"0":{"items":2}, "600":{"items":2},"1000":{"items":2}}
+  }'>
+    <div class="item">
+      <img class="partner-img" src="./assets/img/course/ac.jpg" alt="" width="100%" height="100%">
     </div>
-    <div class="noPrint" style="display: flex; justify-content: center; margin-top: 20px;">
-      <button onclick="window.print();" class="printbtn noPrint">
-        Print
-     </button>
-   </div>
-  </section>
+    <div class="item">
+      <img class="partner-img" src="./assets/img/course/DataScience.jpg" alt="" width="100%" height="100%">
+    </div>
+    <div class="item">
+      <img class="partner-img" src="./assets/img/course/Electrical.jpg" alt="" width="100%" height="100%">
+    </div>
+    <div class="item">
+      <img class="partner-img" src="./assets/img/course/Electronics.jpg" alt="" width="100%" height="100%">
+    </div>
+  </div>
+</div>
+
+  
+
+  <script src="./assets/js/jquery-3.5.1.min.js"></script>
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/owl.carousel.js"></script>
+  <script>
+     var $carousel = $('[data-owl-carousel]');
+        if ($carousel.length) {
+            $carousel.each(function (index, el) {
+                $(this).owlCarousel($(this).data('owl-carousel'));
+            });
+        }
+  </script>
 </body>
 </html>
