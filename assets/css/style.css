@@ -1276,7 +1276,6 @@ nav ul{
 }
 .para-text2s{
     font-size: 0.95pc;
-    font-weight: 600;
     letter-spacing: .15px;
 }
 .explore-div1.vulte-85gtx1{
@@ -1404,7 +1403,7 @@ nav ul{
     margin-bottom: 8px;
 }
 .tab-content{
-    padding: 0 15px;
+    padding: 0;
 }
 .video-div{
     padding: 2vh 0px 0vh;
@@ -1469,7 +1468,7 @@ nav ul{
 .video-title{
     color: #0045aa;
     text-align: center;
-    font-size: 2.45vh;
+    font-size: 20px;
     font-weight: 700;
     font-family: 'Tinos' sans-serif;
 }
@@ -1751,17 +1750,15 @@ footer::before{
     width: 45vh;
     line-height: 27px;
     letter-spacing: .2px;
-    font-weight: 600;
 }
 .text1-testi{
     width: 60.722vh;
     font-size: 0.95pc;
-    font-weight: 600;
     letter-spacing: .15px;
 }
 .double{
     position: absolute;
-    bottom: -5vh;
+    bottom: 0;
     right: 56vh;
 }
 @media (max-width:991px){
@@ -2094,9 +2091,15 @@ footer::before{
     line-height: 1.8;
 }
 .centres-title{
-    font-size: 3.45vh;
+    font-size: 25px;
     font-weight: 700;
     padding: 1vh 0;
+}
+.cen-span{
+    font-size: 15px;
+}
+.cnp_info{
+    font-size: 14px;
 }
 @media (max-width:767px){
     .centres-title{
@@ -2153,6 +2156,17 @@ footer::before{
     background-color: #b9b7b7;
     border-radius: 10px;
 }
+
+
+.tesmo45{
+    height: 100%;
+    gap: 8px;
+    align-items: flex-start;
+    background: mintcream;
+    color: #000;
+    border-radius: 8px;
+}
+
 /* button1 */
 
 .button1 {
@@ -2418,8 +2432,14 @@ footer::before{
     }
 
 
-    #accomplishments img{
-        width: 85%;
-        aspect-ratio: 3/4;
-        object-fit: cover;
+#accomplishments img{
+    width: 85%;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+}
+
+@media (min-width: 1200px){
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1300px;
     }
+}

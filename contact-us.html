@@ -253,35 +253,37 @@
                             <div class="pt-5 pb-3 bg-light">
                                 <div class="container">
                                     <div>
-                                        <div class="row gy-3 justify-content-center">
-                                            <div class="col-md-3">
-                                                <div>
-                                                    <input type="text" class="input-field" placeholder="Name">
+                                        <form action="#">
+                                            <div class="row gy-3 justify-content-center">
+                                                <div class="col-md-3">
+                                                    <div>
+                                                        <input type="text" class="input-field" placeholder="Name" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div>
+                                                        <input type="email" class="input-field" placeholder="Email" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div>
+                                                        <input type="text" pattern="[1-9]{1}[0-9]{9}" title="Enter 10 digit mobile number" maxlength="10" class="input-field" placeholder="Phone" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div>
+                                                        <select name="" id="" class="select-field">
+                                                            <option value="">Select</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <div class="d-flex justify-content-center">
+                                                        <button type="submit" name="submit" class="button1">Submit</button>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="col-md-3">
-                                                <div>
-                                                    <input type="text" class="input-field" placeholder="Email">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-3">
-                                                <div>
-                                                    <input type="text" class="input-field" placeholder="Phone">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-3">
-                                                <div>
-                                                    <select name="" id="" class="select-field">
-                                                        <option value="">Select</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <div class="d-flex justify-content-center">
-                                                    <button class="button1">Submit</button>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
