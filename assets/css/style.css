@@ -1981,7 +1981,7 @@ footer::before{
 }
 .blog-details::after{
     content: '';
-    background: url(../img/blog/bg/cds2.jpg);
+/*  background: url(../img/blog/bg/cds2.jpg); */
     background-size: cover;
     background-position: center center;
     width: 100%;
@@ -2124,7 +2124,6 @@ footer::before{
     background-color: #0c37e4a5;
     color: #fff;
 }
-
 .cnt-bgs3{
     background-color: #fafafa;
     position: relative;
