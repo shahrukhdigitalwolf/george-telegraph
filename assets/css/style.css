@@ -1783,6 +1783,15 @@ footer::before{
         display: none;
     }
 }
+@media (min-width:768px) and (max-width:991px){
+    .double {
+        position: absolute;
+        bottom: 0;
+        right: 0vh;
+        width: 21%;
+        z-index: -1;
+    }
+}
 .mini-line{
     background-color: aliceblue;
     width: 200px;
