@@ -1880,11 +1880,12 @@ footer::before{
     z-index: -1;
 }
 .form-maindiv{
-    background-color: #003962;
-    padding: 3vh 2vh;
+    padding: 1.2rem 1rem;
     width: 95%;
     display: block;
     margin: auto;
+    border: 2px solid #1b1464;
+    box-shadow: -10px 10px 0px #1b1464;
 }
 .form-title.formtitle25xp{
     color: #ffffff;
@@ -1894,8 +1895,15 @@ footer::before{
 }
 .select-field,.input-field{
     width: 100%;
-    padding: 1vh .8vh;
-    border-radius: 8px;
+    padding: 0.4rem;
+    background-color: #EDF0F5;
+    border: 0;
+}
+.form-button{
+    background-color:#E8C358;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
 }
 .pdfa-span{
     color: #003962;
@@ -1906,13 +1914,13 @@ footer::before{
     padding: 1rem .5rem;
 }
 .accordion1-main{
-    background: rgb(255,223,160);
-    background: linear-gradient(0deg, rgba(255,223,160,1) 0%, rgba(255,255,255,1) 100%);
+    background: rgb(110 193 252);
+    background: linear-gradient(0deg, rgb(110 193 252) 0%, rgba(255, 255, 255, 1) 100%);
     padding: 1.5vh;
     position: relative;
 }
 .accordion-btn{
-    background-color: #FFDFA0;
+    background-color: #6EC1FC;
     border-radius: 5px;
     font-weight: 600;
 }
@@ -1920,8 +1928,8 @@ footer::before{
      margin-bottom: 20px;
 }
 .accordion-button:not(.collapsed) {
-    color: #0c63e4;
-    background-color: #ffedcb;
+    color: #ffffff;
+    background-color: #6EC1FC;
 }
 .text756{
     font-size: 2.45vh;
